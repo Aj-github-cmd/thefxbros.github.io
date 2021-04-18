@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#600599;
+  }
+/* css of fxbors home page */
+  .topnav {
+    overflow: hidden;
+    background-color:#f5f6fa;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:1em;
+    font-weight: 800;
+  }
+
+  .topnav a:hover {
+
+    color:#44bd32;
+  }
+    
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a {display: none;font-size:0.9em;}
+    .topnav a.icon {
+      float:right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right:0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  @media screen and (min-width:600px)
+  {
+    #auth{float:right;}
+  }
+  #auth
+  {
+      color:#600599;
+  }
+  /* #container div
+        {
+            display:flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            overflow-x:auto;
+        }
+        .text
+        {    
+            height:20em;
+            width:30em;
+            padding-top:50px;
+            justify-content:center;
+            font-family:sans-serif;
+            overflow-y: hidden;
+            position: relative;
+        }
+        #btn
+        {
+            width:10em;
+            height:3em;
+            background-color:#a769ce;
+            position:absolute;
+            top:80%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:#fff;
+            font-weight: 900;
+            border:#a769ce;
+            border-radius:0.5px;
+            outline:none;
+            cursor: pointer;
+        }
+        #btn:hover{
+          width:10.5em;
+          height:3.5em;
+          
+        }
+        .image
+        {
+            height:20em;
+            width:30em;
+            padding-top:100px;
+            overflow-y: hidden;
+            
+        } 
+        #container h3
+        {
+          position:absolute;
+          top:50%;
+          left:20%;
+          color:#fff;
+          font-family:monospace;
+          font-size:1.5em;
+         
+        }
+          #container h1{
+           
+            color:#fff;
+            font-size:5em;
+            font-weight: 600;
+            font-family: monospace;
+            }
+        .image img{
+            height:20em;
+            width:30em;
+            
+
+        }
+        @media screen and (max-width: 600px) {
+            .image img{
+                height:15em;
+                width:25em;
+                padding-left:20px;
+                padding-right:20px;
+               overflow-y: hidden;
+            }
+            #container h1{font-size:4em;}
+            .text{height:20em}
+            #container h3{font-style:1em;top:40%;
+              left:10%;}
+           
+        } */
+/* css of fxbros pricing section */
+
+  #pricing div
+        {
+            display:flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            overflow-x:auto;
+        }
+        .basic
+        {
+            margin:20px;
+            border:5px solid #fff;
+            height:30em;
+            width:20em;
+            justify-content:center;
+            font-family:sans-serif;
+            border-radius:10px;
+            background-color:#fff;
+            box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                        15px  15px 15px rgba(0,0,0,0.1),
+                        inset -5px -5px 5px rgba(255,255,255,0.2),
+                        inset 5px 5px 5px rgba(0,0,0,0.1);
+                        position: relative;
+        }
+        .basic img{
+          position: absolute;
+          right:35%;
+          top:20%
+        }
+        
+        .buy
+        {
+          
+          width:10em;
+          height:3em;
+          position: absolute;
+          left:30%;
+          top:80%;
+          background-color:#600599;
+          color:white;
+          font-weight: 800;
+          border:#600599;
+          border-radius:0.5px;
+          outline: none;
+          cursor:pointer;
+          
+        }
+        .buy:hover{
+          width:10.5em;
+          height:3.5em;
+        }
+        .premi
+        {
+            margin:20px;
+            border:5px solid #fff;
+            height:30em;
+            width:20em;
+            justify-content:center;
+            font-family:sans-serif;
+            border-radius:10px;
+            background-color:#fff;
+            text-align: center;
+            overflow-y: hidden;
+            box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                        15px  15px 15px rgba(0,0,0,0.1),
+                        inset -5px -5px 5px rgba(255,255,255,0.2),
+                        inset 5px 5px 5px rgba(0,0,0,0.1);
+                        position: relative;    
+        }
+        .premi img{
+          position: absolute;
+          right:35%;
+          top:23%
+        }
+       #pricing h1{
+            background-color:#600599;
+            color:white;
+            font-size:2em;
+            font-family: monospace;
+            text-align: center;
+            height:3em;
+            width:7em;  
+        }
+        #pricing h2{
+            font-size:4em;
+            font-family:monospace;
+            text-align: center;
+            color:black; 
+        }
+  .price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.price li {
+  padding:10px;
+  text-align: center;
+  font-size:1em;
+  font-weight: 700;
+  color:black;
+}
+.inr
+{
+    font-size:30px;
+   padding-bottom:10px;
+   padding-top:10px;
+   color:#600599;
+   font-weight: 700;
+  
+}
+#pricing ul li:before {
+  content: '\2713\0020';
+  padding:4px;
+  color:blueviolet;
+}
+
+/* fx bors about page styling */
+.about-section div
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    overflow-x:auto;
+}
+.fxbox1
+        {
+            margin:20px;
+            height:20em;
+            width:20em;
+            justify-content:center;
+            font-family:sans-serif;
+            position: relative;
+        }
+        .fxbox2
+        {
+            margin:20px;
+            border:5px solid #600599;
+            height:20em;
+            width:20em;
+            justify-content:center;
+            font-family:sans-serif;
+            border-radius:10px;
+            background-color:#600599;
+            text-align: center;
+            overflow-y: hidden;
+            box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                        15px  15px 15px rgba(0,0,0,0.1),
+                        inset -5px -5px 5px rgba(255,255,255,0.2),
+                        inset 5px 5px 5px rgba(0,0,0,0.1);
+                        position: relative;    
+        }
+        .fxbox3
+        {
+            margin:20px;
+            border:5px solid #600599;
+            height:20em;
+            width:20em;
+            justify-content:center;
+            font-family:sans-serif;
+            border-radius:10px;
+            background-color:#600599;
+            text-align: center;
+            overflow-y: hidden;
+            box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                        15px  15px 15px rgba(0,0,0,0.1),
+                        inset -5px -5px 5px rgba(255,255,255,0.2),
+                        inset 5px 5px 5px rgba(0,0,0,0.1);
+                        position: relative;    
+        }
+        .fxbox1:hover{
+        background-color:#fff;
+        border:5px solid #fff;
+        border-radius:10px;
+        box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+        15px  15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+
+      }
+.fxbox1 img{
+ width:10em;
+ height:10em;
+ padding:20px;
+}
+.fxbox2 img{
+  width:10em;
+  height:10em;
+  padding:20px;
+}
+.fxbox3 img{
+  width:10em;
+  height:10em;
+  padding:20px;
+}
+/* styling of faq page */
+    .qstn1
+    {
+      padding-top:70px;
+    }
+    details{
+      padding:3px 170px;
+    }
+    @media screen and (max-width: 600px){
+      details{
+        padding:3px 20px;
+       
+      }
+      summary
+      {
+        height:5rem;
+        font-size:1em;
+      }
+    }
+    summary {
+      font-size: 1.25rem;
+      font-weight: 600;
+      background-color: #fff;
+      color: #333;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      outline: none;
+      border-radius: 1rem;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+    }
+    details > summary::after {
+      position: absolute;
+      content: "+";
+      right: 10px;
+      top:20px;
+    }
+    details[open] > summary::after {
+      position: absolute;
+      content: "-";
+      right: 10px;
+      top:20px;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary ~ * {
+      animation: sweep .5s ease-in-out;
+    }
+    @keyframes sweep {
+      0%    {opacity: 0; margin-top: -10px}
+      100%  {opacity: 1; margin-top: 0px}
+    }
+    .faq__content p{
+      color:#fff;
+      font-size:20px;
+    }
+    /* css for fxbros video gallery */
+    #course div{
+      
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        overflow-x:auto;
+    }
+    .video1
+    
+      {
+        margin:20px;
+        height:25em;
+        width:35em;
+        justify-content:center;
+        font-family:sans-serif;
+        overflow:hidden;
+       border:1px solid #600599;
+    }
+    
+    .video2
+    {
+      margin:20px;
+      height:25em;
+      width:35em;
+      justify-content:center;
+      font-family:sans-serif;
+      overflow-y: hidden;
+      border:1px solid #600599;
+    }   
+
+#course iframe{
+  height:20em;
+  width:30em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.vdotitle
+{
+  font-size:1.5em;
+  text-align:center;
+  padding:5px;
+  color:#fff;
+}
+
+
+    
